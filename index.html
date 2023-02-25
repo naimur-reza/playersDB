@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome To PlayerDB</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar bg-body-tertiary">
+                <div class="navbar bg-base-100">
+                    <div class="flex-1">
+                        <a class="btn btn-ghost normal-case text-xl">PlayerDB</a>
+                    </div>
+                    <div class="flex-none gap-2">
+                        <div class="">
+                            <input id="search-field" type="text" placeholder="Search" class="input input-bordered " />
+                            <button onclick="loadData()" class="btn btn-secondary" type="submit">Search</button>
+                        </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Card group -->
+            <section id="players-container"
+                class="grid py-3 grid-cols-1 md:grid-cols-4 gap-5 place-items-center justify-items-center">
+
+            </section>
+
+    
+            <input type="checkbox" id="player-info" class="modal-toggle" />
+            <section id="modal-container">
+            </section>
+
+
+
+
+            <!-- scripts -->
+            <script src="js/script.js"></script>
+        </main>
+    </body>
+
+</html>
