@@ -27,6 +27,9 @@ const displayData = (data) => {
   <div class="card-body">
     <h2 class="card-title">${strPlayer}</h2>
     <p>${strNationality}</p>
+
+    <p>League Team : ${strTeam}</p>
+
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div class="card-actions justify-end">
     <label onclick="displayModal()" for="player-info" class="btn btn-info">Info</label> 
